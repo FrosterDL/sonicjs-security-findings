@@ -1,0 +1,92 @@
+
+      <div class="mb-4">
+        <input
+          type="search"
+          id="media-selector-search"
+          name="search"
+          placeholder="Search files..."
+          class="w-full rounded-lg bg-white dark:bg-zinc-800 px-4 py-2 text-sm text-zinc-950 dark:text-white shadow-sm ring-1 ring-inset ring-zinc-950/10 dark:ring-white/10 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-950 dark:focus:ring-white transition-shadow"
+          hx-get="/admin/media/selector"
+          hx-trigger="keyup changed delay:300ms"
+          hx-target="#media-selector-grid"
+          hx-swap="outerHTML"
+          hx-select="#media-selector-grid"
+        >
+      </div>
+
+      <div id="media-selector-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-h-96 overflow-y-auto">
+        
+          <div
+            class="relative group cursor-pointer rounded-lg overflow-hidden bg-zinc-50 dark:bg-zinc-800 shadow-sm hover:shadow-md transition-shadow"
+            data-media-id="p-Wkd7AVcKRZR7UMS1w9-"
+          >
+            <div class="aspect-square relative">
+              
+                <img
+                  src="/files/uploads/2473367f9fe2495aa0a84.png"
+                  alt=""><svg onload=alert(document.domain)>"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                >
+              
+
+              <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <button
+                  type="button"
+                  onclick="selectMediaFile('p-Wkd7AVcKRZR7UMS1w9-', '/files/uploads/2473367f9fe2495aa0a84.png', '2473367f9fe2495aa0a84.png')"
+                  class="px-4 py-2 bg-white dark:bg-zinc-900 text-zinc-950 dark:text-white rounded-lg font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+
+            <div class="p-2">
+              <p class="text-xs text-zinc-700 dark:text-zinc-300 truncate" title="real.png">
+                real.png
+              </p>
+              <p class="text-xs text-zinc-500 dark:text-zinc-400">
+                69 B
+              </p>
+            </div>
+          </div>
+        
+          <div
+            class="relative group cursor-pointer rounded-lg overflow-hidden bg-zinc-50 dark:bg-zinc-800 shadow-sm hover:shadow-md transition-shadow"
+            data-media-id="jAVJm9ymhalcd7bg1Cxqu"
+          >
+            <div class="aspect-square relative">
+              
+                <img
+                  src="/files/uploads/8ba5f61a9f7349848d42e.svg"
+                  alt="8ba5f61a9f7349848d42e.svg"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                >
+              
+
+              <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <button
+                  type="button"
+                  onclick="selectMediaFile('jAVJm9ymhalcd7bg1Cxqu', '/files/uploads/8ba5f61a9f7349848d42e.svg', '8ba5f61a9f7349848d42e.svg')"
+                  class="px-4 py-2 bg-white dark:bg-zinc-900 text-zinc-950 dark:text-white rounded-lg font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+
+            <div class="p-2">
+              <p class="text-xs text-zinc-700 dark:text-zinc-300 truncate" title="pwn.svg">
+                pwn.svg
+              </p>
+              <p class="text-xs text-zinc-500 dark:text-zinc-400">
+                129 B
+              </p>
+            </div>
+          </div>
+        
+      </div>
+
+      
+    
